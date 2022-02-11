@@ -1,0 +1,70 @@
+.profile {
+  padding-top: 20px;
+  margin: auto;
+  margin-top: 20px;
+  width: 250px;
+  background-color: white;
+  border: 1px solid rgb(232, 197, 255);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.avatar {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 130px;
+  border: 1px solid rgb(207, 207, 255);
+  border-radius: 50%;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.tag {
+  color: rgb(184, 184, 255);
+  display: flex;
+  justify-content: center;
+}
+.location {
+  color: rgb(184, 184, 255);
+  display: flex;
+  justify-content: center;
+}
+.stats {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+.containerStats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 86px;
+  background-color: rgb(235, 234, 255);
+}
+.label {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 6px rgb(50, 50, 190);
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.quantity {
+  font-weight: 700;
+  padding-bottom: 5px;
+  text-shadow: 0px 0px 8px rgb(25, 25, 252);
+  color: rgb(255, 255, 255);
+}
+.first {
+  border-top: 1px solid rgb(204, 204, 255);
+  border-right: 1px solid rgb(204, 204, 255);
+}
+.second {
+  border-top: 1px solid rgb(204, 204, 255);
+}
+.third {
+  border-top: 1px solid rgb(204, 204, 255);
+  border-left: 1px solid rgb(204, 204, 255);
+}

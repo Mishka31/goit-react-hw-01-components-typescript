@@ -1,0 +1,25 @@
+.section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 400px;
+
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.table {
+  background: #fff;
+}
+.thead {
+  height: 30px;
+  color: white;
+  text-transform: uppercase;
+  background: rgb(107, 189, 236);
+}
+.tr {
+  text-align: center;
+}
+.td {
+  background: rgb(217, 234, 250);
+}
