@@ -1,7 +1,17 @@
-import PropTypes from "prop-types";
-import s from "./transaction-history.module.css";
+import s from './transaction-history.module.css'
 
-function TransactionHistory({ items }) {
+type Items = {
+  id: string
+  type: string
+  amount: string
+  currency: string
+}
+
+interface Props {
+  items: Items[]
+}
+
+function TransactionHistory({ items }: Props) {
   return (
     <section className={s.section}>
       <table className={s.table}>
@@ -24,18 +34,7 @@ function TransactionHistory({ items }) {
         </tbody>
       </table>
     </section>
-  );
+  )
 }
 
-TransactionHistory.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      currency: PropTypes.string,
-      amount: PropTypes.string,
-      type: PropTypes.string,
-      id: PropTypes.string,
-    })
-  ).isRequired,
-};
-
-export default TransactionHistory;
+export default TransactionHistory
