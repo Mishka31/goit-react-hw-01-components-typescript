@@ -19,7 +19,6 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={statJson} />
-      {/* <Statistics stats={statJson} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={TransactionsJson} />
     </div>
