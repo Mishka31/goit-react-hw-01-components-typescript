@@ -1,6 +1,19 @@
-import PropTypes from 'prop-types'
 import defLogo from './default.png' //для примера
 import s from './profile.module.css'
+
+type Option = {
+  followers: number
+  views: number
+  likes: number
+}
+
+interface Props {
+  imageUrl: string
+  tag: string
+  name: string
+  location: string
+  stats: Option
+}
 
 export default function Profile({
   imageUrl = defLogo, //знаю что не обязательно, один раз попробовать))
@@ -8,7 +21,7 @@ export default function Profile({
   name = '', //для примера
   location,
   stats,
-}) {
+}: Props) {
   return (
     <div className={s.profile}>
       <div className="description">
@@ -33,11 +46,4 @@ export default function Profile({
       </ul>
     </div>
   )
-}
-Profile.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
 }

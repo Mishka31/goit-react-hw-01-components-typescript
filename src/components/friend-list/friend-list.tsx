@@ -1,5 +1,4 @@
 import FriendListItem from './FriendListItem'
-import PropTypes from 'prop-types'
 import s from './friend-list.module.css'
 
 type Option = {
@@ -28,17 +27,6 @@ function FriendList({ friends }: Props) {
       </ul>
     </section>
   )
-}
-
-FriendList.propTypes = {
-  friends: PropTypes.arrayOf(
-    PropTypes.shape({
-      avatar: PropTypes.string,
-      name: PropTypes.string,
-      isOnline: PropTypes.bool,
-      id: PropTypes.number,
-    })
-  ).isRequired,
 }
 
 export default FriendList
