@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import defLogo from './default.png' //для примера
 import s from './profile.module.css'
 
@@ -46,4 +47,11 @@ export default function Profile({
       </ul>
     </div>
   )
+}
+Profile.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 }
